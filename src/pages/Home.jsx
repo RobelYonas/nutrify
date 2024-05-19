@@ -1,9 +1,9 @@
+// src/pages/Home.jsx
 import { motion } from "framer-motion";
 import Popular from "../components/Popular";
 import Veggie from "../components/Veggie";
-
-
-import React from 'react'
+import Profile from "../components/Profile";
+import React from 'react';
 
 function Home() {
   return (
@@ -13,10 +13,11 @@ function Home() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-        <Veggie></Veggie>
-        <Popular></Popular>
+      <Profile />
+      <Veggie />
+      <Popular />
     </motion.div>
-  )
+  );
 }
 
-export default Home
+export default Home;
